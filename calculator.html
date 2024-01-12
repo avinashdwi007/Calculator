@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Your Web Page</title>
+  </head>
+  <body>
+    <h2>Calculator</h2>
+    <div class="main">
+      <input type="text" id="input" placeholder="Enter Number" readonly>
+     <div class="buttons">
+    <button style="color:orange;" onclick="clearDisplay()">AC</button>
+    <button style="color:orange;" onclick="deleteLast()">DE</button>
+    <button style="color:orange;" onclick="updateDisplay('%')">%</button>
+    <button onclick="updateDisplay('/')">/</button>
+    <button onclick="updateDisplay('7')">7</button>
+    <button onclick="updateDisplay('8')">8</button>
+    <button onclick="updateDisplay('9')">9</button>
+    <button onclick="updateDisplay('*')">*</button>
+    <button onclick="updateDisplay('4')">4</button>
+    <button onclick="updateDisplay('5')">5</button>
+    <button onclick="updateDisplay('6')">6</button>
+    <button onclick="updateDisplay('-')">-</button>
+    <button onclick="updateDisplay('1')">1</button>
+    <button onclick="updateDisplay('2')">2</button>
+    <button onclick="updateDisplay('3')">3</button>
+    <button onclick="updateDisplay('+')">+</button>
+    <button onclick="updateDisplay('00')">00</button>
+    <button onclick="updateDisplay('0')">0</button>
+    <button onclick="updateDisplay('.')">.</button>
+    <button onclick="calculateResult()" style="background-color: orange;">=</button>
+</div>
+    </div>
+  </body>
+
+  <script src="calculator.js"></script>
+</html>
